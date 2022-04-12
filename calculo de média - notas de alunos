@@ -13,7 +13,6 @@ print("---------------------------------------")
 alunos = int(input("Quantos alunos estudam nessa classe? "))
 print("---------------------------------------")
 nota = 0
-i = 0
 cont = 0
 soma=0
 media = 0
