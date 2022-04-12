@@ -1,0 +1,43 @@
+#Breno Henrique Santos Silva
+#media de nota em uma turma
+#atividade ciência da computação 1º semestre
+#unicid - profº Francisco de Assis Cavallaro
+#programação de computadores - 12.04.2022
+
+print("---------------------------------------")
+print("Ciência da Computação - TURMA DA MANHÃ ")
+print("---------------------------------------")
+print("|       Calcule a média da turma      |")
+print("---------------------------------------")
+alunos = int(input("Quantos alunos estudam nessa classe? "))
+print("---------------------------------------")
+nota = 0
+i = 0
+cont = 0
+soma=0
+media = 0
+aprovados = 0
+reprovados = 0
+muito_bom = 0
+while cont < alunos:
+    cont += 1
+    nota = float(input(f"Qual foi a nota do aluno numero {cont}? "))
+    soma += nota
+    media = soma / cont
+    if nota >= 8:
+        muito_bom += 1
+    else:
+        if nota >= 5:
+            aprovados += 1
+        elif nota < 5:
+            reprovados += 1
+print("--------------------------------------------------")
+print("                  CALCULANDO . . .")
+print("--------------------------------------------------")
+print(f"a soma das notas é igual a {soma}")
+print(f"a média das notas é {media}")
+print("--------------------------------------------------")
+print(f"total de alunos com a nota muito boa: {muito_bom}")
+print(f"total de aprovados: {aprovados}")
+print(f"total de alunos reprovados: {reprovados}")
+print("--------------------------------------------------")
