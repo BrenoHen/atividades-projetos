@@ -1,0 +1,8 @@
+# python
+# import ou from/import  servem para utilizar uma biblioteca em python
+# exemplo: descobrindo a raiz quadrada de um número
+
+import math 
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num) 
+print(f'A raiz quadrada de {num} é igual a {raiz:.2f}'
