@@ -1,0 +1,22 @@
+#python
+#26/04/2022
+#ciência da computação - prof Assis Cavallari
+
+def main():
+    numero = int(input("Fatorial de: ") )
+    resultado=1
+    count=1
+    if numero < 0:
+        numero = int(input('O número escolhido é negativo, por favor digite um número positivo: '))
+    while count <= numero:
+        resultado *= count
+        print (f'{resultado}')
+        count += 1
+        if count == numero + 1:
+            break
+        print (f'{resultado} * {count} =')
+        
+            
+
+    print(f'O fatorial de {numero} é {resultado}')
+main()
